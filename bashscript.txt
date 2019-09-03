@@ -3,7 +3,7 @@ FILE=DevOps_Labs.txt
 LASTNAME=Povoroznyk
 if [ -f "$FILE ];
 then
-         echo "// Current user is: $USER" >> DevOps_Labs.txt
+        echo "// Current user is: $USER" >> DevOps_Labs.txt
 else
         echo "// Current user is:  $USER" >> DevOps_Labs.txt
         echo "// File creation time:"
