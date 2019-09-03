@@ -1,0 +1,12 @@
+#!/bin/bash
+FILE=DevOps_Labs.txt
+LASTNAME=Povoroznyk
+if [ -f "$FILE ];
+then
+         echo "// Current user is: $USER" >> DevOps_Labs.txt
+else
+        echo "// Current user is:  $USER" >> DevOps_Labs.txt
+        echo "// File creation time:"
+        stat -c &y "DevOps_Labs.txt' >> DevOps_Labs.txt
+fi
+tar -cvf DevOps_Labs_$LASTNAME.tar DevOps_Labs.txt
